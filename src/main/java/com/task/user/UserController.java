@@ -41,7 +41,7 @@ public class UserController {
 	@GetMapping(path = "/find", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<User>> getUserByName(@RequestParam(name = "name") final String name)
 			throws ApiResponseNotValidException {
-		return ResponseEntity.ok(userService.getUserByName(name));
+		return ResponseEntity.ok(userService.getUsersByName(name));
 	}
 
 	@GetMapping(path = "/{userId}/save", produces = MediaType.APPLICATION_JSON_VALUE)

@@ -86,7 +86,7 @@ public class UserService {
 	 * @return the User with the given name
 	 * @throws ApiResponseNotValidException if the request body is empty
 	 */
-	public List<User> getUserByName(final String name) throws ApiResponseNotValidException {
+	public List<User> getUsersByName(final String name) throws ApiResponseNotValidException {
 
 		URI uri = UriComponentsBuilder.fromHttpUrl(API_URL).path("/users").queryParam("name", name).build().toUri();
 

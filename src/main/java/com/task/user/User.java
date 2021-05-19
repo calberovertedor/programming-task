@@ -2,12 +2,14 @@ package com.task.user;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @XmlRootElement(name = "user")
 @NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
 	private Integer id;
